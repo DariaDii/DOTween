@@ -853,6 +853,8 @@ GameObject:
   - component: {fileID: 777860067}
   - component: {fileID: 777860066}
   - component: {fileID: 777860065}
+  - component: {fileID: 777860071}
+  - component: {fileID: 777860070}
   - component: {fileID: 777860069}
   m_Layer: 0
   m_Name: Cube (1)
@@ -963,16 +965,46 @@ MonoBehaviour:
   m_GameObject: {fileID: 777860064}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 619bf3b8f8c39894eaeca419bb6a9b34, type: 3}
+  m_Script: {fileID: 11500000, guid: f4da2dc5be351de45aa4269daa2cae0d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: "Assembly-CSharp::\u0421omplex\u0421hange"
-  _positionY: -2
-  _rotation: {x: 0, y: 360, z: 0}
-  _rotateMode: 1
-  _scale: 0.5
-  _duration: 3
-  _repeats: -1
-  _loopType: 1
+  m_EditorClassIdentifier: Assembly-CSharp::Mover
+  _positionY: 0
+  _duration: 0
+  _repeats: 0
+  _loopType: 0
+--- !u!114 &777860070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777860064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afa0f2754d9872341aab6cd7d1572dbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Resizer
+  _scale: 0
+  _duration: 0
+  _repeats: 0
+  _loopType: 0
+--- !u!114 &777860071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777860064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3c0eb067e789ce45915e5a92c59060a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Rotator
+  _rotation: {x: 0, y: 0, z: 0}
+  _duration: 0
+  _rotateMode: 0
+  _repeats: 0
+  _loopType: 0
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0

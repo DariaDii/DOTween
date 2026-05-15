@@ -1,15 +1,15 @@
-using DG.Tweening;
 using UnityEngine;
+using DG.Tweening;
 
-public class Resize : MonoBehaviour
+public class Mover : MonoBehaviour
 {
-    [SerializeField] private float _scale;
+    [SerializeField] private float _positionY;
     [SerializeField] private float _duration;
     [SerializeField] private int _repeats;
     [SerializeField] private LoopType _loopType;
 
     private void Start()
     {
-        transform.DOScale(_scale, _duration).SetLoops(_repeats, _loopType);
+        transform.DOMoveY(_positionY,_duration).SetLoops(_repeats, _loopType);
     }
 }
